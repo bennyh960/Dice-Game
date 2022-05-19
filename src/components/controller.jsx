@@ -20,14 +20,18 @@ export default class Controller extends React.Component {
   render() {
     return (
       <div className="controller">
-        <NewGameBtn />
+        <NewGameBtn OnNewGameClicked={this.props.CallonNewGameClicked} />
         <div className="dice-container">
           <div className={`img1 ${this.props.diceA}`}></div>
           <div className={`img2 ${this.props.diceB}`}></div>
         </div>
         <RoleDiceBtn clickedRoll={this.onRollDiceClick} />
         <OnHoldBtn clickedHold={this.onHoldClick} />
-        <input></input>
+        <input
+          onChange={(e) => {
+            this.props.onInputMaxPts(e.target.value);
+          }}
+        ></input>
       </div>
     );
   }
@@ -35,7 +39,7 @@ export default class Controller extends React.Component {
 
 function NewGameBtn(props) {
   return (
-    <button>
+    <button onClick={props.OnNewGameClicked}>
       <i className="fa-solid fa-circle-plus"></i> New Game
     </button>
   );

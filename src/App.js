@@ -1,9 +1,12 @@
 import Draft from "./components/draft";
+import Game from "./components/lectureGame";
+
 import React from "react";
 
 class App extends React.Component {
   render() {
-    return <Draft />;
+    return <Draft />; //!Dont delete
+    // return <Game />;
   }
 }
 
