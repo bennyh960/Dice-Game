@@ -5,8 +5,8 @@ export default class Controller extends React.Component {
     super(props);
     this.state = { nowPlay: "p2" };
   }
-  onRollDiceClick = (x, y) => {
-    this.props.callOnRollDiceClick(x, y);
+  onRollDiceClick = (randA, randB) => {
+    this.props.callOnRollDiceClick(randA, randB);
   };
   onHoldClick = () => {
     if (this.state.nowPlay === "p1") {

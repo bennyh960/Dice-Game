@@ -1,9 +1,7 @@
 import React from "react";
 import "../style/lectureCSS.css";
 
-// this file is for instruct other students
-
-export default class Game extends React.Component {
+export default class Game2 extends React.Component {
   state = { dice1: null, dice2: null };
 
   componentDidMount() {

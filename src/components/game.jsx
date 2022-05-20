@@ -78,7 +78,6 @@ export default class Draft extends React.Component {
 
       this.currentA = 0;
     } else {
-      // this.totalScoreB += this.currentB;
       this.setState({
         playerOneTurnSymbol: "turn-symbol",
         playerTwoTurnSymbol: "",
