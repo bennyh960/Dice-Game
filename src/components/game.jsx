@@ -11,10 +11,9 @@ export default class Draft extends React.Component {
     this.randB = Math.ceil(Math.random() * 6);
     this.currentA = 0;
     this.currentB = 0;
-    // this.maxPoints = 100;
+
     this.turn = 1; //player1 true , player 2 false.
-    // this.isP1Win = false;
-    // this.isP2Win = false;
+
     this.state = {
       diceA: `dice${this.randA}`,
       diceB: `dice${this.randB}`,
