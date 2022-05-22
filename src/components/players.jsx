@@ -1,8 +1,9 @@
 import React from "react";
 
 const Players = (props) => {
-  const showName = <h1>Player {props.pIdx}</h1> ? !props.isWinner : <h1>WINNER!</h1>;
-  // const showName = <h1>Player {props.pIdx}</h1>;
+  <h1>Player {props.pIdx}</h1> ? !props.isWinner : <h1>WINNER!</h1>;
+  // const showName = <h1>Player {props.pIdx}</h1> ? !props.isWinner : <h1>WINNER!</h1>;
+
   return (
     <div className={`player ${props.playerNum}`}>
       <div className="playerTurnContainer">
